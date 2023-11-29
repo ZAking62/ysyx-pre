@@ -4,7 +4,8 @@ module top(
 	output reg [3:0] out_s,
 	output reg overflow, out_c, zero
 );
-	reg [3:0] t_add_y = ( 4'b1111^in_y );  
+	wire [3:0]t_add_y;
+	assign t_add_y = ( 4'b1111^in_y );  
 	always @(*)
 	begin
 		case(op)
