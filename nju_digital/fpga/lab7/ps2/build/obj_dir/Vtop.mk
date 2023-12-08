@@ -4,7 +4,7 @@
 # Execute this makefile from the object directory:
 #    make -f Vtop.mk
 
-default: /home/zyf/ysyx-workbench/nvboard/lab7/ps2/build/top
+default: /home/zyf/Desktop/ysyx-pre/nju_digital/fpga/lab7/ps2/build/top
 
 ### Constants...
 # Perl executable (from $PERL)
@@ -55,8 +55,8 @@ VM_USER_CLASSES = \
 
 # User .cpp directories (from .cpp's on Verilator command line)
 VM_USER_DIR = \
-	/home/zyf/ysyx-workbench/nvboard/lab7/ps2/build \
-	/home/zyf/ysyx-workbench/nvboard/lab7/ps2/csrc \
+	/home/zyf/Desktop/ysyx-pre/nju_digital/fpga/lab7/ps2/build \
+	/home/zyf/Desktop/ysyx-pre/nju_digital/fpga/lab7/ps2/csrc \
 
 
 ### Default rules...
@@ -68,13 +68,13 @@ include $(VERILATOR_ROOT)/include/verilated.mk
 ### Executable rules... (from --exe)
 VPATH += $(VM_USER_DIR)
 
-auto_bind.o: /home/zyf/ysyx-workbench/nvboard/lab7/ps2/build/auto_bind.cpp
+auto_bind.o: /home/zyf/Desktop/ysyx-pre/nju_digital/fpga/lab7/ps2/build/auto_bind.cpp
 	$(OBJCACHE) $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(OPT_FAST) -c -o $@ $<
-sim_main.o: /home/zyf/ysyx-workbench/nvboard/lab7/ps2/csrc/sim_main.cpp
+sim_main.o: /home/zyf/Desktop/ysyx-pre/nju_digital/fpga/lab7/ps2/csrc/sim_main.cpp
 	$(OBJCACHE) $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(OPT_FAST) -c -o $@ $<
 
 ### Link rules... (from --exe)
-/home/zyf/ysyx-workbench/nvboard/lab7/ps2/build/top: $(VK_USER_OBJS) $(VK_GLOBAL_OBJS) $(VM_PREFIX)__ALL.a $(VM_HIER_LIBS)
+/home/zyf/Desktop/ysyx-pre/nju_digital/fpga/lab7/ps2/build/top: $(VK_USER_OBJS) $(VK_GLOBAL_OBJS) $(VM_PREFIX)__ALL.a $(VM_HIER_LIBS)
 	$(LINK) $(LDFLAGS) $^ $(LOADLIBES) $(LDLIBS) $(LIBS) $(SC_LIBS) -o $@
 
 

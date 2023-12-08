@@ -1,5 +1,5 @@
 auto_bind.o: \
- /home/zyf/ysyx-workbench/nvboard/lab7/ps2/build/auto_bind.cpp \
+ /home/zyf/Desktop/ysyx-pre/nju_digital/fpga/lab7/ps2/build/auto_bind.cpp \
  /home/zyf/ysyx-workbench/nvboard/include/nvboard.h \
  /home/zyf/ysyx-workbench/nvboard/include/configs.h \
  /home/zyf/ysyx-workbench/nvboard/include/constrs.h \

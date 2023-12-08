@@ -1,4 +1,5 @@
-sim_main.o: /home/zyf/ysyx-workbench/nvboard/lab7/ps2/csrc/sim_main.cpp \
+sim_main.o: \
+ /home/zyf/Desktop/ysyx-pre/nju_digital/fpga/lab7/ps2/csrc/sim_main.cpp \
  /usr/local/share/verilator/include/verilated.h \
  /usr/local/share/verilator/include/verilatedos.h \
  /usr/local/share/verilator/include/verilated_config.h \
