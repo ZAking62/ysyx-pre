@@ -1,0 +1,9 @@
+top=top
+
+op (BTNC, BTNU, BTND)
+in_x (SW3, SW2, SW1, SW0)
+in_y (SW7, SW6, SW5, SW4)
+out_s (LD3, LD2, LD1, LD0)
+overflow (LD5)
+out_c (LD4)
+zero (LD6)
